@@ -1,1 +1,17 @@
 // Mixins in here
+//Create button mix in
+.createButton(@width, @bacgroundColor, @font-size, @color, @border-radius, @displayFlex, @justify-content, @align-items, @heightPx){
+    width:@width;
+    background-color: @bacgroundColor;
+    font-size: @font-size;
+    color:@color;
+    border-radius: @border-radius;
+    display:@displayFlex;
+    justify-content: @justify-content;
+    align-items: @align-items;        
+    height:@heightPx;
+  }
+
+  .animationDuration(@duration){
+      animation-duration: @duration;
+  }

@@ -1,1 +1,61 @@
 // Navigation Styles here
+.debugBorder(@color){
+    border:1px solid @color;
+  }
+
+.menuContainer{
+    
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @media @mobileSize{
+            flex-direction: column;
+            align-content: center;
+            width:100%;
+        }
+
+        .funBus{
+            width:20%;
+            @media @mobileSize{
+                width:40%;
+            }
+            
+        }
+
+        .menu{
+            width:75%;
+            display:flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            @media @mobileSize{
+                width:100%;
+            }
+
+
+}
+            a{
+               color:@shark;
+               text-decoration: none;
+               font-size: 2.3rem; 
+               &:hover{
+               animation-name: turn;
+               .animationDuration(1s);
+               @keyframes turn {
+                100% {
+                    transform: rotate(360deg);
+                 }
+                }
+            }
+        }
+    
+}
+.navBorder{
+    // margin:0% 28% 1% 28%;
+    margin: 0 auto;
+    max-width: 800px;
+    border-top: 1px dashed @navigation-border;
+}
