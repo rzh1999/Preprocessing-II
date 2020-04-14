@@ -1,31 +1,69 @@
 // Navigation Styles here
+.debugBorder(@color){
+    border:1px solid @color;
+  }
 
 .menuContainer{
-    margin:5% 28% 0% 28%;
-    display:flex;
-    justify-content: space-between;
     
-    .funBus{
-        width:20%;
-        color:@shark;
-    }
-
-    .menu{
-        width:50%;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
         display:flex;
-        align-items: flex-end;
-        justify-content: space-evenly;
-        letter-spacing: .2rem;
-
-        a{
-            color:@shark;
-            text-decoration: none;
-            font-size: 2.3rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .funBus{
+            width:20%;
             
         }
-    }//closes menu
-  
-}//closes menuContainer
+        .menu{
+            width:75%;
+            display:flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+
+            a{
+               color:@shark;
+               text-decoration: none;
+               font-size: 2.3rem;  
+            }
+        }
+    
+}
+
+
+// .menuContainer{
+//     // margin:2% 0% 0% 23%;
+//     // // margin:150px 0;
+//     // width:50%;
+//     // display:flex;
+//     width:50%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     // justify-content: space-between;
+//     .debugBorder(green);
+    
+//     .funBus{
+//         width:20%;
+//         color:@shark;
+//     }
+
+//     .menu{
+//          width:80%;
+//         display:flex;
+//         align-items: flex-end;
+//         justify-content: space-evenly;
+//         .debugBorder(red);
+//         letter-spacing: .2rem;
+
+//         a{
+//             color:@shark;
+//             text-decoration: none;
+//             font-size: 2.3rem;  
+//         }
+//     }//closes menu
+// }//closes menuContainer
 .navBorder{
     margin:0% 28% 1% 28%;
     border-top: 1px dashed @navigation-border;
