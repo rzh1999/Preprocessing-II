@@ -203,12 +203,23 @@ img {
     width: 100%;
   }
 }
-.menuContainer .menu a {
+.menuContainer a {
   color: #212529;
   text-decoration: none;
   font-size: 2.3rem;
 }
+.menuContainer a:hover {
+  animation-name: turn;
+  animation-duration: 1s;
+}
+@keyframes turn {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .navBorder {
+  margin: 0 auto;
+  max-width: 800px;
   border-top: 1px dashed #C0C0C0;
 }
 .footer {
